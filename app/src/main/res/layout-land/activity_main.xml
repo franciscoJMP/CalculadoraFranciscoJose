@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/tx_numero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/blanco"
+
+        android:enabled="false"
+        android:gravity="right|center"
+        android:inputType="textPersonName"
+        android:text="0"
+        android:textColor="#151414"
+        android:textSize="20pt" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        android:layout_marginLeft="2pt">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1pt">
+            <ImageButton
+                android:id="@+id/bt_borrar"
+                android:layout_weight="1"
+                android:layout_width="48pt"
+                android:layout_height="30pt"
+                android:src="@drawable/eliminar"
+                android:layout_marginRight="2pt"
+                android:background="@color/fondoAzul"
+                android:onClick="borrarCaracter"
+                ></ImageButton>
+
+            <Button
+                android:id="@+id/bt_AC"
+                android:layout_weight="1"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:text="AC"
+                android:layout_marginRight="2pt"
+                android:background="@color/fondoAzul"
+                android:onClick="numero"
+                ></Button>
+
+            <Button
+                android:id="@+id/bt_cero"
+                android:layout_weight="1"
+                android:layout_width="48pt"
+                android:layout_height="30pt"
+                android:text="0"
+                android:layout_marginRight="2pt"
+                android:background="@color/fondoAzul"
+                android:onClick="numero"
+                ></Button>
+            <Button
+                android:id="@+id/bt_uno"
+                android:layout_weight="1"
+                android:layout_width="48pt"
+                android:layout_height="30pt"
+                android:text="1"
+                android:layout_marginRight="2pt"
+                android:background="@color/fondoAzul"
+                android:onClick="numero"
+                ></Button>
+            <Button
+                android:id="@+id/bt_dos"
+                android:layout_weight="1"
+                android:layout_width="48pt"
+                android:layout_height="30pt"
+                android:text="2"
+                android:layout_marginRight="2pt"
+                android:background="@color/fondoAzul"
+                android:onClick="numero"
+                ></Button>
+            <Button
+                android:id="@+id/bt_tres"
+                android:layout_weight="1"
+                android:layout_width="48pt"
+                android:layout_height="30pt"
+                android:text="3"
+                android:layout_marginRight="2pt"
+                android:background="@color/fondoAzul"
+                android:onClick="numero"
+                ></Button>
+
+
+
+
+            <Button
+                android:id="@+id/bt_mas"
+                android:layout_weight="1"
+                android:layout_width="48pt"
+                android:layout_height="30pt"
+                android:text="+"
+                android:layout_marginRight="2pt"
+                android:background="@color/colorAccent"
+                android:onClick="operacion"
+                ></Button>
+            <Button
+                android:id="@+id/bt_menos"
+                android:layout_weight="1"
+                android:layout_width="48pt"
+                android:layout_height="30pt"
+                android:text="-"
+                android:layout_marginRight="2pt"
+                android:background="@color/colorAccent"
+                android:onClick="operacion"
+                ></Button>
+
+
+
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1pt">
+
+
+
+            <Button
+                android:id="@+id/bt_cuatro"
+                android:layout_weight="1"
+                android:layout_width="48pt"
+                android:layout_height="30pt"
+                android:text="4"
+                android:layout_marginRight="2pt"
+                android:background="@color/fondoAzul"
+                android:onClick="numero"
+                ></Button>
+
+            <Button
+                android:id="@+id/bt_cinco"
+                android:layout_weight="1"
+                android:layout_width="48pt"
+                android:layout_height="30pt"
+                android:text="5"
+                android:layout_marginRight="2pt"
+                android:background="@color/fondoAzul"
+                android:onClick="numero"
+                ></Button>
+            <Button
+                android:id="@+id/bt_seis"
+                android:layout_weight="1"
+                android:layout_width="48pt"
+                android:layout_height="30pt"
+                android:text="6"
+                android:layout_marginRight="2pt"
+                android:background="@color/fondoAzul"
+                android:onClick="numero"
+                ></Button>
+            <Button
+                android:id="@+id/bt_siete"
+                android:layout_weight="1"
+                android:layout_width="48pt"
+                android:layout_height="30pt"
+                android:text="7"
+                android:layout_marginRight="2pt"
+                android:background="@color/fondoAzul"
+                android:onClick="numero"
+                ></Button>
+            <Button
+                android:id="@+id/bt_ocho"
+                android:layout_weight="1"
+                android:layout_width="48pt"
+                android:layout_height="30pt"
+                android:text="8"
+                android:layout_marginRight="2pt"
+                android:background="@color/fondoAzul"
+                android:onClick="numero"
+                ></Button>
+            <Button
+                android:id="@+id/bt_nueve"
+                android:layout_weight="1"
+                android:layout_width="48pt"
+                android:layout_height="30pt"
+                android:text="9"
+                android:layout_marginRight="2pt"
+                android:background="@color/fondoAzul"
+                android:onClick="numero"
+                ></Button>
+            <Button
+                android:id="@+id/bt_div"
+                android:layout_weight="1"
+                android:layout_width="48pt"
+                android:layout_height="30pt"
+                android:text="/"
+                android:layout_marginRight="2pt"
+                android:background="@color/colorAccent"
+                android:onClick="operacion"
+                ></Button>
+            <Button
+                android:id="@+id/bt_multi"
+                android:layout_weight="1"
+                android:layout_width="48pt"
+                android:layout_height="30pt"
+                android:text="*"
+                android:layout_marginRight="2pt"
+                android:background="@color/colorAccent"
+                android:onClick="operacion"
+                ></Button>
+
+
+
+
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1pt">
+            <Button
+                android:id="@+id/bt_NP"
+                android:layout_weight="1"
+                android:layout_width="48pt"
+                android:layout_height="30pt"
+                android:text="+/-"
+                android:layout_marginRight="2pt"
+                android:background="@color/fondoAzul"
+
+                ></Button>
+            <Button
+                android:id="@+id/bt_porcent"
+                android:layout_weight="1"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:text="%"
+                android:layout_marginRight="2pt"
+                android:background="@color/fondoAzul"
+                android:onClick="porcentaje"
+                ></Button>
+
+            <Button
+                android:id="@+id/bt_A"
+                android:layout_weight="1"
+                android:layout_width="48pt"
+                android:layout_height="30pt"
+                android:text="A"
+                android:layout_marginRight="2pt"
+                android:background="@color/fondoAzul"
+                android:onClick="numero"
+                android:enabled="false"
+                ></Button>
+
+            <Button
+                android:id="@+id/bt_B"
+                android:layout_weight="1"
+                android:layout_width="48pt"
+                android:layout_height="30pt"
+                android:text="B"
+                android:layout_marginRight="2pt"
+                android:background="@color/fondoAzul"
+                android:onClick="numero"
+                android:enabled="false"
+                ></Button>
+            <Button
+                android:id="@+id/bt_C"
+                android:layout_weight="1"
+                android:layout_width="48pt"
+                android:layout_height="30pt"
+                android:text="C"
+                android:layout_marginRight="2pt"
+                android:background="@color/fondoAzul"
+                android:onClick="numero"
+                android:enabled="false"
+                ></Button>
+            <Button
+                android:id="@+id/bt_E"
+                android:layout_weight="1"
+                android:layout_width="48pt"
+                android:layout_height="30pt"
+                android:text="E"
+                android:layout_marginRight="2pt"
+                android:background="@color/fondoAzul"
+                android:onClick="numero"
+                android:enabled="false"
+                ></Button>
+            <Button
+                android:id="@+id/bt_D"
+                android:layout_weight="1"
+                android:layout_width="48pt"
+                android:layout_height="30pt"
+                android:text="D"
+                android:layout_marginRight="2pt"
+                android:background="@color/fondoAzul"
+                android:onClick="numero"
+                android:enabled="false"
+                ></Button>
+            <Button
+                android:id="@+id/bt_F"
+                android:layout_weight="1"
+                android:layout_width="48pt"
+                android:layout_height="30pt"
+                android:text="F"
+                android:layout_marginRight="2pt"
+                android:background="@color/fondoAzul"
+                android:onClick="numero"
+                android:enabled="false"
+                ></Button>
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <Button
+                android:id="@+id/bt_dec"
+                android:layout_weight="1"
+                android:layout_width="48pt"
+                android:layout_height="30pt"
+                android:text="DEC"
+                android:layout_marginRight="2pt"
+                android:background="@color/colorAccent"
+                android:onClick="convertirDecimal"
+                ></Button>
+            <Button
+                android:id="@+id/bt_bin"
+                android:layout_weight="1"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:text="BIN"
+                android:layout_marginRight="2pt"
+                android:background="@color/colorAccent"
+                android:onClick="convertirBinario"
+                ></Button>
+            <Button
+                android:id="@+id/bt_hexa"
+                android:layout_weight="1"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:text="HEX"
+                android:layout_marginRight="2pt"
+                android:background="@color/colorAccent"
+                android:onClick="convertirHexa"
+                ></Button>
+
+
+            <Button
+                android:id="@+id/bt_igual"
+                android:layout_weight="1"
+                android:layout_width="48pt"
+                android:layout_height="30pt"
+                android:text="="
+                android:layout_marginRight="2pt"
+                android:background="@color/colorAccent"
+                android:onClick="mostrarResultado"
+                ></Button>
+
+
+
+        </TableRow>
+
+
+
+    </TableLayout>
+
+
+</LinearLayout>
